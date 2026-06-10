@@ -1,0 +1,360 @@
+/* ===================================
+   Docker Cleanup Dashboard
+   style.css
+=================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    font-family:'Segoe UI',sans-serif;
+    min-height:100vh;
+}
+
+/* =====================
+   Login Page
+===================== */
+
+.login-body{
+    background:linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #334155
+    );
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.login-wrapper{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-card{
+
+    width:420px;
+    max-width:90%;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    border-radius:24px;
+
+    padding:40px;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,0.35);
+
+}
+
+.login-title{
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.login-subtitle{
+    color:#cbd5e1;
+    margin-bottom:10px;
+}
+
+.login-btn{
+    border:none;
+    border-radius:12px;
+    padding:12px;
+    font-weight:600;
+}
+
+.demo-box{
+
+    background:#1e293b;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    margin-top:10px;
+
+}
+
+.login-footer{
+    margin-top:25px;
+    color:#94a3b8;
+    font-size:14px;
+}
+
+/* =====================
+   Navbar
+===================== */
+
+.navbar{
+    box-shadow:
+    0 2px 15px rgba(0,0,0,.3);
+}
+
+.navbar-brand{
+    font-weight:700;
+}
+
+/* =====================
+   Cards
+===================== */
+
+.card{
+
+    background:#1e293b;
+
+    border:none;
+
+    border-radius:20px;
+
+    color:white;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,.25);
+
+}
+
+.stat-card{
+
+    transition:all .3s ease;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.stat-card h6{
+    color:#cbd5e1;
+    margin-bottom:10px;
+}
+
+.stat-card h1{
+    font-size:2rem;
+    font-weight:700;
+}
+
+.analytics-card{
+    min-height:350px;
+}
+
+/* =====================
+   Alerts
+===================== */
+
+.alert{
+    border:none;
+    border-radius:14px;
+}
+
+/* =====================
+   Forms
+===================== */
+
+.form-control{
+
+    background:#334155;
+
+    border:1px solid #475569;
+
+    color:white;
+
+    border-radius:12px;
+
+    padding:12px;
+
+}
+
+.form-control:focus{
+
+    background:#334155;
+
+    color:white;
+
+    border-color:#60a5fa;
+
+    box-shadow:none;
+
+}
+
+.form-control::placeholder{
+    color:#cbd5e1;
+}
+
+label{
+    margin-bottom:6px;
+}
+
+/* =====================
+   Tables
+===================== */
+
+.table{
+    color:white;
+}
+
+.table-dark{
+    background:#0f172a;
+}
+
+.table-hover tbody tr:hover{
+
+    background:#334155;
+
+    transition:0.2s;
+
+}
+
+.table td,
+.table th{
+
+    vertical-align:middle;
+
+}
+
+code{
+    color:#38bdf8;
+}
+
+/* =====================
+   Badges
+===================== */
+
+.badge{
+    font-size:0.85rem;
+    padding:8px 10px;
+}
+
+/* =====================
+   Buttons
+===================== */
+
+.btn{
+    border-radius:12px;
+    font-weight:600;
+}
+
+.btn-primary{
+    background:#2563eb;
+}
+
+.btn-primary:hover{
+    background:#1d4ed8;
+}
+
+.btn-danger:hover{
+    transform:scale(1.03);
+}
+
+.btn-warning:hover{
+    transform:scale(1.03);
+}
+
+/* =====================
+   Search Box
+===================== */
+
+#searchInput,
+#historySearch{
+    margin-top:10px;
+}
+
+/* =====================
+   Footer
+===================== */
+
+footer{
+
+    color:#94a3b8;
+
+    font-size:14px;
+
+}
+
+/* =====================
+   List Group
+===================== */
+
+.list-group-item{
+
+    background:#334155;
+
+    color:white;
+
+    border:none;
+
+    margin-bottom:8px;
+
+    border-radius:10px;
+
+}
+
+/* =====================
+   Chart Area
+===================== */
+
+canvas{
+    max-height:300px;
+}
+
+/* =====================
+   Scrollbar
+===================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#475569;
+    border-radius:20px;
+}
+
+/* =====================
+   Mobile Responsive
+===================== */
+
+@media(max-width:768px){
+
+    .login-card{
+
+        width:95%;
+
+        padding:25px;
+
+    }
+
+    .stat-card h1{
+
+        font-size:1.5rem;
+
+    }
+
+    .navbar-brand{
+
+        font-size:1rem;
+
+    }
+
+}
